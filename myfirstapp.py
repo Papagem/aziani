@@ -32,7 +32,7 @@ else:
         'Intplan': ['yes', 'yes', 'yes', 'no'],
         'Churn Status': [0, 0, 0, 1]
         }))
-else:
+elif:
     'Starting a long computation...'
     
     latest_iteration = st.empty()
