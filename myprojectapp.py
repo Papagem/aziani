@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from sklearn import datasets
+from sklearn.ensemble import RandomForestClassifier
 
 st.header("My first Project App")
 st.write(pd.DataFrame({
@@ -8,15 +10,10 @@ st.write(pd.DataFrame({
     'Churn Status': [0, 0, 0, 1]
 }))
 
-import streamlit as st
-import pandas as pd
-from sklearn import datasets
-from sklearn.ensemble import RandomForestClassifier
-
 st.write("""
 # My First project App
 
-This app predicts the **Iris flower** type!
+This app predicts the **Advertising Data** type!
 """)
 
 st.sidebar.header('User Input Parameters')
