@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 from sklearn import datasets
-from sklearn.ensemble import LinearRegression
+from sklearn.linear_model import LinearRegression
 st.write("""
 # My First project App
 st.header("My first Project App")
 
-This app predicts the **Advertising Data** type!
+This app predicts the **Sales** type!
 """)
 
 st.sidebar.header('User Input Parameters')
@@ -22,6 +22,9 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 df = user_input_features()
+
+st.subheader('User Input parameters')
+st.write(df)
 
 df = pd.read_csv('Advertising.csv')
 
