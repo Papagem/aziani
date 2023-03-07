@@ -14,7 +14,7 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
-# Simple Iris Flower Prediction App
+# My First project App
 
 This app predicts the **Iris flower** type!
 """)
