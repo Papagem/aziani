@@ -27,7 +27,7 @@ st.write(df)
 
 dfdata = pd.read_csv('Advertising.csv')
 dfdata = df.drop(['Unnamed:0'],axis=1)
-X = dfdata.drop(['Sales'],axis=1
+X = dfdata.drop('Sales',axis=1)
 Y = dfdata.Sales          
 
 clf = LinerRegression()
