@@ -1,17 +1,11 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
-st.header("My first Project App")
-st.write(pd.DataFrame({
-    'Intplan': ['TV', 'Radio', 'Newspaper', 'Sales'],
-    'Churn Status': [0, 0, 0, 1]
-}))
-
 st.write("""
 # My First project App
+st.header("My first Project App")
 
 This app predicts the **Advertising Data** type!
 """)
