@@ -4,6 +4,6 @@ import pandas as pd
 
 st.header("My first Project App")
 st.write(pd.DataFrame({
-    'Intplan': ['yes', 'yes', 'yes', 'no'],
+    'Intplan': ['TV', 'Radio', 'Newspaper', 'Sales'],
     'Churn Status': [0, 0, 0, 1]
 }))
