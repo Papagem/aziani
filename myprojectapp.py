@@ -25,10 +25,10 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-df = pd.read_csv('Advertising.csv')
-df = df.drop(['Unnamed:0'],axis=1)
-X = df.drop(['Sales'],axis=1
-Y = df.Sales          
+dfdata = pd.read_csv('Advertising.csv')
+dfdata = df.drop(['Unnamed:0'],axis=1)
+X = dfdata.drop(['Sales'],axis=1
+Y = dfdata.Sales          
 
 clf = LinerRegression()
 clf.fit(X, Y)
