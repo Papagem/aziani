@@ -1,6 +1,8 @@
 from sklearn import preprocessing
 scaler = preprocessing.MinMaxScaler()
 
+df = pd.read_csv('Advertising.csv')
+
 scaled=scaler.fit_transform(df)
 df_scaled = pd.DataFrame(scaled)
 df_scaled.head()
