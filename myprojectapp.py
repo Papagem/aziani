@@ -12,28 +12,23 @@ This app predicts the **Sales** type!
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    TV = st.sidebar.slider('TV', 4.3, 7.9, 5.4)
-    Radio = st.sidebar.slider('Radio', 2.0, 4.4, 3.4)
-    Newspaper = st.sidebar.slider('Newspaper', 1.0, 6.9, 1.3)
+    TV = st.sidebar.slider('TV', 0, 200, 10)
+    Radio = st.sidebar.slider('Radio', 0, 100, 10)
+    Newspaper = st.sidebar.slider('Newspaper', 0, 100, 10)
              data = {'TV': TV,
             'Radio': Radio,
             'Newspaper': Newspaper,
-            'Sales': Sales}
-    features = pd.DataFrame(data, index=[0])
-    return features
+features = pd.DataFrame(data, index=[0])
+return features
 df = user_input_features()
 
 st.subheader('User Input parameters')
 st.write(df)
 
 df = pd.read_csv('Advertising.csv')
-
-st.subheader('User Input parameters')
-st.write(df)
-
-iris = datasets.load_iris()
-X = iris.data
-Y = iris.target
+df = df.drop(['Unnamed:0'],axis=1)
+X = df.drop(['Sales'],axis=1
+Y = df.Sales          
 
 clf = LinerRegression()
 clf.fit(X, Y)
